@@ -70,7 +70,7 @@ Off+Off = infinite gliss
 
 Range:
 
-OCT -4 = 15Hz (clamped) to OCT +5 = 5000Hz limit = ∼8 octaves
+OCT -4 = 15Hz (clamped) to OCT +5 = 20000Hz limit.
 
 C-1 to C8
 
