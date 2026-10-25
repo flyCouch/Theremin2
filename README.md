@@ -1,8 +1,8 @@
-Theremin PI 2040 - 3 Layers Stacked
+Theremin PI 2040 - 4 Layers Stacked
 
 1. Reference Pitch - 6 options
 
-Where does A live? Shifts everything: ref_off = 12_log2(ref/440)
+Where does A live? ref_off = 12_log2(ref/440)
 
 Baroque A 415Hz = -101c
 
@@ -16,29 +16,35 @@ Euro A 442Hz = +8c
 
 Love A 528Hz = +320c
 
-2. Temperament - 7 options
+2. Key / Root - 12 options
 
-How pure is each interval? Micro shifts -29 to +34 cents:
+C, C#, D, D#, E, F, F#, G, G#, A, A#, B
 
-Off / Equal - modern piano, all keys identical
+Transposes the scale pattern. Pentatonic in C vs Pentatonic in F# = same shape, different notes.
 
-Just Intonation - pure thirds, no beating
+3. Temperament - 7 options
 
-Pythagorean - pure fifths, bright medieval
+How pure is each interval? -29 to +34 cents:
 
-Meantone - Renaissance choirs, mellow thirds
+Off / Equal - modern piano
 
-Werckmeister 3 - Bach organ, every key has different mood
+Just - pure thirds
 
-19 Tone Equal - microtonal third-tones
+Pythagorean - pure fifths, bright
 
-3. Scale - which notes survive - 11 options
+Meantone - Renaissance mellow
 
-In 2 octave playing field 48-72 (C3-C5):
+Werckmeister 3 - Bach, key color
 
-Off - continuous slide, infinite notes
+19 Tone Equal - microtonal
 
-Chromatic - all 12 notes, 24 spots
+4. Scale - 11 options
+
+Which notes survive in 2-oct field 48-72:
+
+Off - continuous gliss, infinite
+
+Chromatic - 12 notes, 24 spots
 
 Major / Minor - 7 notes, 14 spots
 
@@ -46,35 +52,31 @@ Whole Tone - 6 notes, 12 spots
 
 Blues - 6 notes, 12 spots
 
-Pentatonic - 5 notes major pentatonic, 10 spots
+Pentatonic - 5 notes, 10 spots
 
-Pelog - 5 notes Javanese gamelan, 10 spots
+Pelog - Javanese, 10 spots
 
-Slendro - 5 notes Indonesian gamelan, 10 spots
+Slendro - Indonesian, 10 spots
 
-Hirajoshi - 5 notes Japanese, 10 spots
+Hirajoshi - Japanese, 10 spots
 
-Bhairav - 7 notes Indian morning raga, 14 spots
+Bhairav - Indian, 14 spots
 
-4. Octave - 10 positions
+Octave - 10 positions
 
 -4 to +5 = freq _ 2^oct
 
 Math:
 
-11 x 7 x 6 = 462 tunings
+12 keys x 11 scales x 7 temps x 6 refs = 5,544 tunings
 
-462 x 10 oct = 4,620 distinct ranges
+5,544 x 10 oct = 55,440 distinct ranges
 
-Off+Off = infinite gliss
+Off+Off = infinite
 
-Range:
+Range: OCT -4 = 15Hz to OCT +5 = 20kHz (wide amp)
 
-OCT -4 = 15Hz (clamped) to OCT +5 = 20000Hz limit.
-
-C-1 to C8
-
-Summary: Reference = global center, Temperament = per-note cents, Scale = which notes exist, Octave = where the 2-oct window sits.
+So: REF = center, KEY = root, TEMP = tuning, SCALE = filter, OCT = window.
 
 
 
