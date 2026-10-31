@@ -80,6 +80,29 @@ So: REF = center, KEY = root, TEMP = tuning, SCALE = filter, OCT = window.
 
 Use the smpGenerator to make some random samples. Run in the Thonny shell once.
 
+# K0=SIN K1=SQU K2=SAW K3=TRI
+
+
+# K4=SMP1 K5=SMP2 K6=SMP3 K7=SMP4  -> /smp/smp1.raw .. smp4.raw
+
+# K8=ref K9=root/transpose K10=temp K11=scale K12=oct+ K13=lvl K15=oct-
+
+# HOW TO MAKE SAMPLES (Audacity):
+
+# 1. Trim to 0.5 sec (8000 samples @16k)
+
+# 2. Mono, Project Rate 16000
+
+# 3. Effect > Fade In 5ms at start, Fade Out 5ms at end for loop
+
+# 4. Export Other uncompressed -> RAW Signed 16-bit PCM -> smp1.raw etc
+
+# 5. Or WAV 16-bit mono 16k - code strips header
+
+# 6. In Thonny: View > Files, make /smp on Pico, drag files in
+
+
+
 
 
 
