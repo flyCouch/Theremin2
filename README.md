@@ -78,6 +78,8 @@ Range: OCT -4 = 15Hz to OCT +5 = 20kHz (wide amp)
 
 So: REF = center, KEY = root, TEMP = tuning, SCALE = filter, OCT = window.
 
+Use the smpGenerator to make some random samples. Run in the Thonny shell once.
+
 
 
 
